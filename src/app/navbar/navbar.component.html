@@ -1,0 +1,30 @@
+
+<nav>
+    <ul class="menu">
+        <li>
+            <a class= "link" [routerLink]="['inicio']" href="">Inicio</a>
+            
+        </li>
+        <li>
+            <a href="#">Categoria</a>
+            <ul class="menu-vertical">
+                <li><a class= "link" [routerLink]="['hombres']" href="">Hombre</a></li>
+                <li><a class= "link" [routerLink]="['mujer']" href="">Mujer</a></li>
+            </ul>
+            
+        </li>
+
+        <li>
+
+            <button class="link" (click)="logout()">Cerrar Sesión</button>
+
+        </li>
+        
+    </ul>
+
+</nav>
+
+<div>
+    
+</div>
+

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+
+nav{
+    max-width: none;
+    margin: auto;
+    background: rgb(49, 166, 208);
+    font-size: 20px;
+    margin-top: none;
+
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu > li:hover{
+    background-color: rgb(64, 147, 189);
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: black;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    
+}
+
+.menu-vertical > li > ul{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.menu li > button{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    background-color: rgb(49, 166, 208);
+    text-decoration: none;
+    border: none;
+}
+
+.menu li > button:hover{
+    background-color: rgb(64, 147, 189);
+}

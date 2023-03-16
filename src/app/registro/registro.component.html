@@ -1,0 +1,27 @@
+<div>
+
+    <img class="fondo" src="assets/ImagenFondo.webp">
+
+    <section class="form-register">
+        <h4>CREA TU CUENTA</h4>
+        <select class="controls" name="tipoDocumento" id="" [(ngModel)]="tipoDocumentoSeleccionado">
+            <option [value]="tipoDocumento.id" *ngFor="let tipoDocumento of tiposDocumentos">{{tipoDocumento.nombre}}</option>
+        </select>
+        <input class="controls" type="number" name="documento" id="documento" placeholder="Ingrese su Documento"[(ngModel)]="documento"/>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese sus Nombres"[(ngModel)]="nombres"/>
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus Apellidos"[(ngModel)]="apellidos"/>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo Electrónico"[(ngModel)]="email"/>
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña"[(ngModel)]="contrasena"/>
+        <input class="controls" type="password" name="confirmarcontraseña" id="confirmarcontraseña" placeholder="Confirmación de contraseña"[(ngModel)]="confirmarContrasena"/>
+    
+        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+        <button class="botons" type="button" (click)="enviarFormulario()">CREAR CUENTA</button>
+        <p>¿Ya estas registrado? <a class="link" [routerLink]="['/login']" href="">Iniciar Sesión</a></p>
+    
+    </section>
+    
+
+
+
+</div>
+

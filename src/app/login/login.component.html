@@ -1,0 +1,23 @@
+<div>
+
+    <img class="fondo" src="assets/ImagenFondo.webp">
+
+    <section class="form-login">
+
+    
+        <img src="assets/Convertic.jpeg">
+    
+        <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo Electronico"[(ngModel)]="email"/>
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña"[(ngModel)]="contrasena"/>
+    
+        <p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+        <button class="botons" type="button" (click)="enviarFormularioLogin()" >LOGIN</button>
+        <p>¿No tienes cuenta? <a class="link" [routerLink]="'/registro'" href="">Crear Cuenta</a></p>
+        
+        
+    </section>
+
+</div>
+
+
+
